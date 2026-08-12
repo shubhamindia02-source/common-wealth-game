@@ -10,7 +10,7 @@
 }
 
 body{
-    cursor: url("image/cur.png") 64 64, auto; 
+    cursor: url("image/cur.png") 16 16, auto; 
   
 }
 
@@ -76,7 +76,7 @@ body{
     text-decoration: none;
 
     transition: all 0.3s ease-in;
-    cursor: pointer;
+    /* cursor: pointer; */
     position: relative;
     letter-spacing: 1.5px;
    
