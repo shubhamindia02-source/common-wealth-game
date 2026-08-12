@@ -7,7 +7,7 @@
 
 .p1-text {
     position: absolute;
-   
+
     top: 270px;
     left: 100px;
     text-align: left;
@@ -24,10 +24,10 @@
     font-size: 250px;
     color: var(--white);
     text-shadow: 3px 0px 15px rgba(0, 0, 0, 0.34);
-      transform: skewX(-8deg);
-       animation: appear 1.5s linear;
+    transform: skewX(-8deg);
+    animation: appear 1.5s linear;
 
-      
+
 
 }
 
@@ -36,8 +36,8 @@
     margin-top: -80px;
     color: var(--white);
     text-shadow: 1px 0px 15px rgba(0, 0, 0, 0.645);
-     transform: skewX(-8deg);
-      animation: appear 1.8s linear;
+    transform: skewX(-8deg);
+    animation: appear 1.8s linear;
 
 
 }
@@ -46,10 +46,10 @@
     font-size: 100px;
     margin-top: -30px;
     color: var(--saffron);
-     text-shadow: 1px 0px 15px #00000094;
-      transform: skewX(-8deg);
-      margin-left: -15px;
-       animation: appear 2s linear;
+    text-shadow: 1px 0px 15px #00000094;
+    transform: skewX(-8deg);
+    margin-left: -15px;
+    animation: appear 2s linear;
 
 
 }
@@ -58,175 +58,229 @@
     font-size: 80px;
     margin-top: -40px;
     color: var(--green);
-     text-shadow: 1px 0px 15px #00000094;
-      transform: skewX(-10deg);
-           margin-left: -15px;
-            animation: appear 2.4s linear;
+    text-shadow: 1px 0px 15px #00000094;
+    transform: skewX(-10deg);
+    margin-left: -15px;
+    animation: appear 2.4s linear;
 
 
 
 }
-#pra{
+
+#pra {
     font-size: 1.2rem;
     font-family: var(--body-font);
     color: var(--white);
     letter-spacing: 0.8;
     margin-left: -20px;
-     animation: appear 2.8s linear;
+    animation: appear 2.8s linear;
 
 }
-#hero-btn{
-  
+
+#hero-btn {
+
     margin-left: -30px;
     width: 400px;
     margin-top: 10px;
 }
-#hero-btn button{
- box-sizing: border-box;
- width: 180px;
- margin-left: 10px   ;
- height: 50px;
- border-radius: 10px;
- font-size: 20px;
- border-width: 0px;
- text-transform: uppercase;
- font-family: var(--heading-font);
- background:var(--saffron);
-  animation: appear 3s linear;
-  cursor: pointer;
+
+#hero-btn button {
+    box-sizing: border-box;
+    width: 180px;
+    margin-left: 10px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-width: 0px;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+    background: var(--saffron);
+    animation: appear 3s linear;
+    cursor: pointer;
 
 
- 
- 
- 
- 
+
+
+
+
 }
-#hero-btn button a{
+
+#hero-btn button a {
     text-decoration: none;
     color: var(--white);
 }
-#hero-btn #bt-2{
-    background:transparent;
+
+#hero-btn #bt-2 {
+    background: transparent;
     border: 2px solid var(--white);
 
 }
 
 @keyframes appear {
-    from{
-        opacity: 0;          
+    from {
+        opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
-    
+
 }
 
 
-#sec-2{
-  
+#sec-2 {
+
     margin-top: 40px;
     text-align: center;
 }
-#sec-2 h2{
+
+#sec-2 h2 {
     /* color: var(--saffron); */
-    color: var(--dark-blue);
-    font-family:var(--body-font) ;
+    color: var(--saffron);
+    font-family: var(--body-font);
     font-weight: 800;
     font-size: 40px;
     letter-spacing: -0.7px;
-    
+    /* animation: box-slide linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%; */
+
 }
 
-#count-main{
+
+
+
+
+#count-main {
     display: flex;
     justify-content: center;
     gap: 50px;
-}
 
-.count-box{
-         background: var(--white);
-         width: 140px; 
-         height: 200px;
-         box-sizing: border-box;
-         border-radius: 10px;
-         margin-top: 30px;
-         box-shadow: 2px 2px 10px #00000078;
-    
-         
+
 
 }
 
-.trop-icon{
-    font-size: 50px;
-    margin-top: 10px;
+.count-box {
+    background: var(--white);
+    width: 240px;
+    height: 270px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 10px gray;
+
+
+    animation: box-slide linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+
+
+}
+
+@keyframes box-slide {
+    from {
+        opacity: 0;
+        transform: perspective(1600px) rotateY(35deg) rotateX(25deg) translateY(150px) scale(.55);
+        filter: blur(3px);
+    }
+
+    60% {
+        transform: perspective(1600px) rotateY(-5deg) scale(1.05);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: perspective(1600px) rotateY(0) rotateX(0) translateY(0) scale(1);
+        filter: blur(0);
+    }
+
+
+}
+
+
+
+
+.trop-icon img {
+    width: 100px;
+    margin-top: 15px;
 }
 
 .count-box h4 {
     font-family: var(--heading-font);
     font-size: 50px;
-    margin-top: 18px;
+    margin-top: 5px;
     /* color: var(--navy-blue); */
     color: var(--dark-blue);
 }
 
-.count-box h5{
-    font-family: var(--heading-font);
+.count-box h5 {
+    font-family: var(--body-font);
     font-size: 25px;
-    font-weight: 100;
+    font-weight: 500;
+    margin-top: 5px;
     color: var(--dark-blue);
-   
+
 
 }
 
-#sec-3{
+#sec-3 {
     background: #e2e2e2aa;
     margin-top: 30px;
     text-align: center;
-    
+    height: 600px;
+
     overflow: hidden;
-     width: 100%;
+    width: 100%;
     overflow: hidden;
-     
+
 }
 
 
 
-.headding h2{
+.headding h2 {
     font-family: var(--body-font);
     font-size: 40px;
     font-weight: 800;
     color: var(--dark-blue);
-    
-     padding-top: 30px; 
-   
+
+    padding-top: 30px;
+
 }
-.headding p{
+
+.headding p {
     color: var(--green);
     font-weight: 300;
     font-size: 20px;
+    font-family: var(--body-font);
 }
 
-#champ-box{
-    
+#champ-box {
 
-     display: flex;
+
+    display: flex;
     gap: 30px;
     /* width: max-content; */
     animation: slide 20s linear infinite;
     transition: all ease-in-out;
     margin-top: 30px;
-  
-    
-   
+
+
+
+
+
+
 
 }
-#champ-box:hover{
+
+#champ-box:hover {
     animation-play-state: paused;
-    
+
 }
 
-.pic-box{
-     width: 320px;
+.pic-box {
+    width: 320px;
     min-width: 320px;
     height: 430px;
     background: #ffffff;
@@ -234,69 +288,267 @@
     padding: 20px;
     box-sizing: border-box;
     /* flex-shrink: 0; */
+
+
 }
 
-.pic-box img{
+.pic-box img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 15px;
 }
 
-@keyframes slide{
-    from{
+@keyframes slide {
+    from {
         transform: translateX(0);
     }
-    to{
-         /* transform: translateX(calc(-100% - 15px));  */
-         transform: translateX(-145%); 
+
+    to {
+        /* transform: translateX(calc(-100% - 15px));  */
+        transform: translateX(-145%);
     }
 }
 
-.player-name{
-     font-size: 1.5rem;
+.player-name {
+    font-size: 1.5rem;
     font-weight: 700;
-     margin-top: 18px;
-       letter-spacing: 0.5px;
+    margin-top: 18px;
+    letter-spacing: 0.5px;
 
 }
 
-.player-sprt{
+.player-sprt {
     font-size: 1.2rem;
     font-weight: 500;
-       margin: 8px 0;
+    margin: 8px 0;
     text-align: center;
 
 }
 
-.medals{
+/* .medals{
  
-}
+} */
 
-.vist{
-       width:180px;
-    height:30px;
-     cursor:pointer;
-     margin-top:10px;
-    border:none;
-     border-radius:50px;
-     background: var(--saffron);
+.vist {
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    background: var(--saffron);
     border-radius: 40px;
     transition: all 0.3s ease-in;
 }
 
 
-.vist a{
+.vist a {
 
-    text-decoration:none;
-    color:var(--white);
-    font-size:1rem;
-    font-weight:600;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+
+
+
+}
+
+.vist:hover {
+    background: var(--green);
+}
+
+
+#sec-4 {
+     background: #e2e2e2aa; 
+ 
+    text-align: center;
+    padding-top: 50px;
+    height: 850px;
+
+}
+
+.sport-sec {
+
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+
+
+}
+
+.sport-sec .boxx {
+    width: 270px;
+    background: var(--white);
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px gray;
+    transition: all 0.3S ease-in;
+
+
+     animation: box-slide linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%; 
+
+}
+
+.boxx:hover{
+
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+.sec4-h3 {
+    font-family: var(--body-font);
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--green);
+
+}
+
+.sec4-p {
+    color: var(--dark-blue);
+    font-weight: 300;
+    font-size: 20px;
+    font-family: var(--body-font);
+}
+
+
+.boxx h3 {
+    margin-top: 10px;
+    color: var(--dark-blue);
+    font-weight: 500;
+    font-size: 25px;
+    font-family: var(--body-font);
+
+}
+
+.boxx img {
+    margin-top: 20px;
+    align-items: center;
+    width: 200px;
+
+
+}
+
+#foot-container{
+    display: flex;
+    justify-content: space-around;
+}
+.first-foot{
+
+    width: 400px;
+
+}
+.first-foot img{
+    width: 15rem;
+}
+
+.first-foot p{
+    font-family: var(--body-font);
+    font: 100;
+    font-size: 1rem;
+    margin-top: -25px;
+}
+.social-icon{
+    margin-top: 20px;
+}
+
+
+
+.social-icon a img{
+    width: 40px;
+    margin: 10px;
+    transition: all 0.2s ease-in;
+    border-radius: 20px;
+     box-sizing: border-box;
+}
+
+.social-icon a img:hover{
    
+    border: 3px solid var(--dark-blue);
     
+    padding: 5px;
+}
+
+.sec-foot{
+      font-family: var(--body-font);
+    margin-top: 30px;
+}
+
+.sec-foot h5{
+    font-size: 1.4rem;
+    color: rgb(192, 190, 190);
+    font-weight: 500;
     
 }
-  .vist:hover{
-     background: var(--green);
-}  
 
+.sec-foot ul li {
+    list-style: none;
+    font-size: 1.2rem;
+} 
+
+.sec-foot ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.third-foot{
+     font-family: var(--body-font);
+    margin-top: 30px;
+    text-align: right;
+}
+
+.third-foot h5{
+        font-size: 1.4rem;
+    color: rgb(192, 190, 190);
+    font-weight: 500;
+    
+    
+
+}
+
+.third-foot h3{
+    font-size: 1.2rem;
+    color: var(--saffron);
+}
+.third-foot h4{
+    font-size: 1rem;
+    color: var(--green);
+    font-weight: 400;
+}
+
+#own{
+    text-align: center;
+    background: var(--dark-blue);
+}
+
+#own h2 {
+ font-family: var(--body-font); 
+  font-weight: 200;
+    color: var(--white);
+    font-size: 1rem;
+    padding: 5px; 
+  
+}
+#own h3{
+    font-family: var(--body-font); 
+  font-weight: 200;
+    color: var(--white);
+    font-size: 1rem;
+    
+
+}
+
+
+ 
