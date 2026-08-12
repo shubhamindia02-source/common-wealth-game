@@ -390,17 +390,14 @@
     box-shadow: 2px 2px 10px gray;
     transition: all 0.3S ease-in;
 
-
+ 
      animation: box-slide linear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%; 
+    animation-range: entry 0% cover 30%;  
 
 }
 
-.boxx:hover{
 
-    transform: scale(1.05);
-}
 
 
 
