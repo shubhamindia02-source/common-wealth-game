@@ -1,0 +1,103 @@
+
+
+ .medal-winners{
+    /* background: red; */
+    /* width: 9; */
+ 
+    padding: 40px 20px;
+ }
+ 
+  .medal-winners h2{
+
+    text-align: center;
+    font-size: 32px;
+     margin-bottom: 30px; 
+    color:var(--dark-blue);
+    font-family: var(--body-font);
+    font-weight: 600;
+    margin-top: 40px;
+
+  }
+
+
+  .gallery{
+    width: 80%;
+   margin: 20px auto;
+   display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+
+
+}
+
+
+.gallery-item{
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    /* display: block; */
+    display: block;
+
+}
+
+
+.gallery-item img{
+    width: 100%;
+     height: 100%; 
+      object-fit: cover;
+       transition: transform 0.3s ease;
+       display: block;
+          
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+
+.image-preview{
+
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 8%;
+    left: 0;
+   
+    width: 100%;
+        height: 93%;
+
+
+    background: rgba(0, 0, 0, 0.85);
+     align-items: center;
+    justify-content: center;
+}
+
+
+.image-preview img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+
+    border-radius: 10px;
+
+
+}
+
+#close {
+    position: absolute;
+
+    top: 20px;
+    right: 35px;
+
+    color: white;
+    font-size: 45px;
+
+    cursor: pointer;
+}
+
+#close:hover {
+    color: var(--saffron);
+}

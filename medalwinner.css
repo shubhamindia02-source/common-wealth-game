@@ -1,0 +1,130 @@
+/* .medal-winners {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.medal-winners h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.medal-winners table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.medal-winners th {
+    background: #111827;
+    color: #ffffff;
+    padding: 16px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.medal-winners td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 15px;
+}
+
+.medal-winners tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.medal-winners tbody tr:hover {
+    background: #f1f5f9;
+}
+
+.medal-winners td:first-child {
+    font-weight: 700;
+    text-align: center;
+    width: 60px;
+}
+
+.medal-winners td:nth-child(2) {
+    font-weight: 600;
+}
+ */
+
+
+ .medal-winners{
+    /* background: red; */
+    /* width: 9; */
+ 
+    padding: 40px 20px;
+ }
+ 
+  .medal-winners h2{
+
+    text-align: center;
+    font-size: 32px;
+     margin-bottom: 30px; 
+    color:var(--dark-blue);
+    font-family: var(--body-font);
+    font-weight: 600;
+    margin-top: 40px;
+
+  }
+
+
+
+   .table-container {
+    
+    width: 70%;
+    margin: auto;
+       
+   }
+
+   table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin: 20px 0 40px; */
+    background: #fff;
+     border: 1px solid #000000;
+    
+}
+
+th,
+td {
+     padding: 14px 16px; 
+    
+    border-bottom:  0.5px dashed rgba(0, 0, 0, 0.315);
+    text-align: left;
+    width: 200px;
+    font-family: var(--body-font);
+}
+
+th {
+    background:var(--saffron);
+    /* color: #fff; */
+    color: var(--black);
+    font-weight: 600;
+    font-family: var(--body-font);
+}
+
+tr:hover {
+   
+    background: var(--green);
+}
+
+h2 {
+    margin-top: 40px;
+    font-family: var(--body-font);
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+tr{
+    transition: all 0.2s ease-in;
+}

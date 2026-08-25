@@ -59,12 +59,7 @@ body{
       margin-left: -110PX;
       
 }
-#nav-menu {
-    
-   
-    /* width: 700px; */
-    
-}
+
 .nav-link{
       
     margin: 15px;
@@ -183,7 +178,7 @@ body{
 
 .sec-foot ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--navy-blue)
 }
 
 
@@ -238,5 +233,21 @@ body{
     border: 1px solid var(--navy-blue); 
 }
 
+.sec-foot ul li a:hover{
+    color: var(--green);
+}
 
  
+
+/* slide menu */
+
+.slide-menu{
+    background:var(--white)  ;
+    position: relative;
+    width: 180px;
+    /* right: -230px; */
+    top: 177px;
+   
+    display: flex;
+    flex-direction: column;
+}
