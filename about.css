@@ -362,13 +362,13 @@ main {
 
     .head-text h3 {
         font-size: 1.3rem;
-        margin-left: -250px;
+        margin-left: -200px;
         margin-top: 15px;
     }
 
     .head-text h4 {
         font-size: 1.8rem;
-        margin-left: -250px;
+        margin-left: -200px;
     }
 
     .head-text p {
@@ -384,9 +384,8 @@ main {
         justify-content: center;
         gap: 5px;
         padding-left: 0;
-
-         margin-left: -310px;
-
+        margin-left: -250px;
+        padding-bottom: 3px;       
     }
 
     .hr hr {
