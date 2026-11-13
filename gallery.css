@@ -101,3 +101,49 @@
 #close:hover {
     color: var(--saffron);
 }
+
+
+
+
+
+ /* _---------MOBLIE PHONE SCREEN */
+@media (max-width:767px){
+
+
+
+  
+     .gallery{
+            width: 96%;
+          }
+
+
+}
+
+
+
+ /* _------TABLET SCREEN */
+     @media (min-width:768px) and (max-width:991px){
+
+       
+
+          .gallery{
+            width: 90%;
+          }
+
+     }
+
+
+
+
+      /* _---------LAPTOP SMALL SCREEN */
+     @media (min-width: 991px) and (max-width: 1199px){
+
+
+        
+         
+
+          .gallery{
+            width: 90%;
+          }
+
+     }

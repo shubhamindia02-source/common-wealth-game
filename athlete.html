@@ -24,27 +24,46 @@
 <body>
 
     <header class="nav-header">
-        <div id="logo">
-            <img src="image/LOGO.png" alt="logo" class="nav-logo">
-        </div>
-        <div id="nav-menu">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <!-- <a href="sport.html" class="nav-link">Sport</a> -->
-            <a href="athlete.html" class="nav-link active">Athlete</a>
-            <a href="medalwinner.html" class="nav-link">Medals</a>
+      <div id="logo">
+         <img src="image/LOGO.png" alt="logo" class="nav-logo">
+      </div>
+      <div id="nav-menu" class="main-menu">
+         <a href="index.html" class="nav-link active">Home</a>
+         <a href="about.html" class="nav-link ">About</a>
+    
+         <a href="athlete.html" class="nav-link ">Athlete</a>
+         <a href="medalwinner.html" class="nav-link ">Medals</a>
 
-            <a href="gallery.html" class="nav-link">Gallery</a>
-          
+         <a href="gallery.html" class="nav-link ">Gallery</a>
+         
 
-        </div>
-        <!-- <div class="hamburger" id="hamburger">
-         <span></span>
-         <span></span>
-         <span></span>
-      </div> -->
+      </div>
 
-    </header>
+      <div id="hamburger"><img src="image/hamburger.png" alt="" class="ham"></div>
+
+      <div id="nav-menu" class="slide-menu">
+         <a href="index.html" class="nav-link ">Home</a>
+         <a href="about.html" class="nav-link ">About</a>
+      
+         <a href="athlete.html" class="nav-link active">Athlete</a>
+         <a href="medalwinner.html" class="nav-link ">Medals</a>
+
+         <a href="gallery.html" class="nav-link ">Gallery</a>
+         
+
+      </div>
+
+
+
+
+            
+
+
+
+   
+
+   </header>
+
 
     <main>
 
@@ -64,44 +83,7 @@
         <section id="sec-three">
 
 
-            <!-- <div class="box">
-        <h3>Women's Wheelchair 3×3 Basketball</h3>
-        <table>
-
-            <tr>
-                <th>Name</th>
-                <th>Sport</th>
-                <th>Event</th>
-            </tr>
-            <tr>
-                <td>Reena Rameshchandra Gupta</td>
-                <td>Wheelchair Basketball</td>
-                <td>Women's 3×3 Basketball</td>
-            </tr>
-
-             <tr>
-                <td>Irengbam Ritu Chanu</td>
-                <td>Wheelchair Basketball</td>
-                <td>Wheelchair Basketball</td>
-            </tr>
-
-
-             <tr>
-                <td>Jadhav Minakshi Harichandra</td>
-                <td>Wheelchair Basketball</td>
-                <td>Wheelchair Basketball</td>
-            </tr>
-
-
-             <tr>
-                <td>Rayannavar Laxmi Rayappa</td>
-                <td>Wheelchair Basketball</td>
-                <td>Wheelchair Basketball</td>
-            </tr>
-
-                 </table>
-        </div> -->
-
+           
                   <div class="box">
             <!-- Women's Wheelchair 3×3 Basketball -->
             <h2>Women's Wheelchair 3×3 Basketball  </h2>    
@@ -995,12 +977,11 @@
                 <img src="image/LOGO.png" alt="" .>
                 <p>Celebrating India's journey at the Commonwealth Games by showcasing our athletes, medal-winning
                     performances, and unforgettable sporting moments.</p>
-                <div class="social-icon">
-                    <a href=""> <img src="image/facebook.png" alt="" class="icon"></a>
-                    <a href=""> <img src="image/instagram.png" alt="" class="icon"></a>
-                    <a href=""> <img src="image/youtube.png" alt="" class="icon"></a>
-                    <a href=""> <img src="image/twitter.png" alt="" class="icon"></a>
-                </div>
+              <div class="social-icon">
+               <a href="https://www.facebook.com/WeAreTeamIndia/"  target="_blank" > <img src="image/facebook.png" alt="" class="icon"></a>
+               <a href="https://www.instagram.com/weareteamindia/" target="_blank"  > <img src="image/instagram.png" alt="" class="icon"></a>
+               <a href="https://x.com/IndianOlympians"             target="_blank"  > <img src="image/twitter.png" alt="" class="icon"></a>
+            </div>
             </div>
 
             <div class="sec-foot">
@@ -1044,5 +1025,19 @@
 
   
 </body>
+
+<script>
+   $(document).ready(function(){
+
+
+       $(".slide-menu").hide()
+
+       $("#hamburger").click(function(){
+         $(".slide-menu").slideToggle(500)
+       })
+
+
+   })
+</script>
 
 </html>

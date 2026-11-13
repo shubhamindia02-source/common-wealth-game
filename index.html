@@ -7,19 +7,23 @@
    <title>Commmon Wealth Games </title>
   
 
-    <script src="script.js"></script>
+
  
    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.gstatic.com" >
 
    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet">
 
    <link rel="stylesheet" href="main.css">
    <link rel="stylesheet" href="index.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
  
 </head>
 
@@ -28,10 +32,10 @@
       <div id="logo">
          <img src="image/LOGO.png" alt="logo" class="nav-logo">
       </div>
-      <div id="nav-menu">
+      <div id="nav-menu" class="main-menu">
          <a href="index.html" class="nav-link active">Home</a>
          <a href="about.html" class="nav-link ">About</a>
-         <!-- <a href="sport.html" class="nav-link">Sport</a> -->
+    
          <a href="athlete.html" class="nav-link ">Athlete</a>
          <a href="medalwinner.html" class="nav-link ">Medals</a>
 
@@ -39,6 +43,23 @@
          
 
       </div>
+
+      <div id="hamburger"><img src="image/hamburger.png" alt="" class="ham"></div>
+
+      <div id="nav-menu" class="slide-menu">
+         <a href="index.html" class="nav-link active">Home</a>
+         <a href="about.html" class="nav-link ">About</a>
+        
+         <a href="athlete.html" class="nav-link ">Athlete</a>
+         <a href="medalwinner.html" class="nav-link ">Medals</a>
+
+         <a href="gallery.html" class="nav-link ">Gallery</a>
+         
+
+      </div>
+
+
+
 
             
 
@@ -300,27 +321,27 @@
 
             <div class="boxx">
                <img src="image/p7.png" alt="">
-               <h3>Badminton</h3>
+               <h3 class="tittle">Badminton</h3>
             </div>
 
             <div class="boxx">
                <img src="image/p8.png" alt="">
-               <h3>Athletics</h3>
+               <h3 class="tittle">Athletics</h3>
             </div>
 
             <div class="boxx">
                <img src="image/p9.png" alt="">
-               <h3>Weightlifting</h3>
+               <h3 class="tittle">Weightlifting</h3>
             </div>
 
             <div class="boxx">
                <img src="image/p10.png" alt="">
-               <h3>Wrestling</h3>
+               <h3 class="tittle">Wrestling</h3>
             </div>
 
             <div class="boxx">
                <img src="image/p11.png" alt="">
-               <h3>Boxing</h3>
+               <h3 class="tittle">Boxing</h3>
             </div>
          </div>
 
@@ -331,27 +352,27 @@
 
             <div class="boxx">
                <img src="image/p12.png" alt="">
-               <h3>Hockey</h3>
+               <h3 class="tittle">Hockey</h3>
             </div>
 
             <div class="boxx">
                <img src="image/p13.png" alt="">
-               <h3>Table Tennis</h3>
+               <h3 class="tittle">Table Tennis</h3>
             </div>
 
             <div class="boxx">
                <img src="image/p14.png" alt="">
-               <h3>Shooting</h3>
+               <h3 class="tittle">Shooting</h3>
             </div>
 
             <div class="boxx">
                <img src="image/p15.png" alt="">
-               <h3>Lawn Bowls</h3>
+               <h3 class="tittle">Lawn Bowls</h3>
             </div>
 
             <div class="boxx">
                <img src="image/p16.png" alt="">
-               <h3>Aquatics</h3>
+               <h3 class="tittle">Aquatics</h3>
             </div>
          </div>
 
@@ -417,5 +438,20 @@
 
 
 </body>
+
+
+<script>
+   $(document).ready(function(){
+
+
+       $(".slide-menu").hide()
+
+       $("#hamburger").click(function(){
+         $(".slide-menu").slideToggle(500)
+       })
+
+
+   })
+</script>
 
 </html>

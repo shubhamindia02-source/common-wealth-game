@@ -25,29 +25,47 @@
 <body>
 
 
-    <header class="nav-header">
-        <div id="logo">
-            <img src="image/LOGO.png" alt="logo" class="nav-logo">
-        </div>
-        <div id="nav-menu">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <!-- <a href="sport.html" class="nav-link">Sport</a> -->
-            <a href="athlete.html" class="nav-link ">Athlete</a>
-            <a href="medalwinner.html" class="nav-link active">Medals</a>
+     <header class="nav-header">
+      <div id="logo">
+         <img src="image/LOGO.png" alt="logo" class="nav-logo">
+      </div>
+      <div id="nav-menu" class="main-menu">
+         <a href="index.html" class="nav-link active">Home</a>
+         <a href="about.html" class="nav-link ">About</a>
+       
+         <a href="athlete.html" class="nav-link ">Athlete</a>
+         <a href="medalwinner.html" class="nav-link ">Medals</a>
 
-            <a href="gallery.html" class="nav-link">Gallery</a>
+         <a href="gallery.html" class="nav-link ">Gallery</a>
+         
+
+      </div>
+
+      <div id="hamburger"><img src="image/hamburger.png" alt="" class="ham"></div>
+
+      <div id="nav-menu" class="slide-menu">
+         <a href="index.html" class="nav-link ">Home</a>
+         <a href="about.html" class="nav-link ">About</a>
+      
+         <a href="athlete.html" class="nav-link ">Athlete</a>
+         <a href="medalwinner.html" class="nav-link active">Medals</a>
+
+         <a href="gallery.html" class="nav-link ">Gallery</a>
+         
+
+      </div>
+
+
+
+
             
 
 
-        </div>
-        <!-- <div class="hamburger" id="hamburger">
-         <span></span>
-         <span></span>
-         <span></span>
-      </div> -->
 
-    </header>
+   
+
+   </header>
+
 
 
     <section class="medal-winners">
@@ -440,12 +458,11 @@
                 <img src="image/LOGO.png" alt="" .>
                 <p>Celebrating India's journey at the Commonwealth Games by showcasing our athletes, medal-winning
                     performances, and unforgettable sporting moments.</p>
-                <div class="social-icon">
-                    <a href=""> <img src="image/facebook.png" alt="" class="icon"></a>
-                    <a href=""> <img src="image/instagram.png" alt="" class="icon"></a>
-                    <a href=""> <img src="image/youtube.png" alt="" class="icon"></a>
-                    <a href=""> <img src="image/twitter.png" alt="" class="icon"></a>
-                </div>
+               <div class="social-icon">
+               <a href="https://www.facebook.com/WeAreTeamIndia/"  target="_blank" > <img src="image/facebook.png" alt="" class="icon"></a>
+               <a href="https://www.instagram.com/weareteamindia/" target="_blank"  > <img src="image/instagram.png" alt="" class="icon"></a>
+               <a href="https://x.com/IndianOlympians"             target="_blank"  > <img src="image/twitter.png" alt="" class="icon"></a>
+            </div>
             </div>
 
             <div class="sec-foot">
@@ -488,4 +505,17 @@
 
 </body>
 
+<script>
+   $(document).ready(function(){
+
+
+       $(".slide-menu").hide()
+
+       $("#hamburger").click(function(){
+         $(".slide-menu").slideToggle(500)
+       })
+
+
+   })
+</script>
 </html>

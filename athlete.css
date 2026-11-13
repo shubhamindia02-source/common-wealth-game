@@ -52,8 +52,15 @@
 .box {
     width: 80%;
     margin: auto;
+
     
 } 
+h2 {
+    margin-top: 40px;
+    font-family: var(--body-font);
+    color: var(--dark-blue);
+    font-weight: 700;
+}
 
 
 table {
@@ -77,6 +84,7 @@ th {
     background:var(--saffron);
     /* color: #fff; */
     color: var(--black);
+    
     font-weight: 600;
     font-family: var(--body-font);
 }
@@ -88,12 +96,128 @@ tr:hover {
     background: var(--green);
 }
 
-h2 {
-    margin-top: 40px;
-    font-family: var(--body-font);
-    color: var(--dark-blue);
-    font-weight: 700;
-}
+
 tr{
     transition: all 0.2s ease-in;
 }
+
+
+
+
+
+ /* _---------MOBLIE PHONE SCREEN */
+@media (max-width:767px){
+
+   
+
+    #sec-one img{
+        width: 100%;
+    }
+
+
+
+
+
+
+      .p1-text {
+       
+            top: 60px;
+            left: 10px;
+        }
+
+        .p1-text h2{
+            font-size: 1.5rem;
+        }
+        .p1-text p{
+            font-size: 0.4rem;
+            width: 50%;
+            margin-left: 1px;
+            margin-top: 1px;
+        }
+
+
+        #sec-two h3{
+            font-size: 2.8rem;
+            margin-bottom: -20px;
+            
+        }
+
+        .box h2{
+            font-size: 1.2em;
+        }
+       .box{
+       width: 90%;
+       }
+
+       td{
+        font-size: 0.8rem;
+       }
+       
+}
+
+
+
+
+
+ /* _------TABLET SCREEN */
+
+
+
+
+     @media (min-width:768px) and (max-width:991px){
+
+
+
+
+         .p1-text {
+       
+            top: 90px;
+            left: 20px;
+        }
+
+        .p1-text h2{
+            font-size: 2.7rem;
+        }
+        .p1-text p{
+            font-size: 0.7rem;
+            margin: auto;
+        }
+
+
+     }
+
+
+
+
+
+
+
+
+
+
+     
+ /* _---------LAPTOP SMALL SCREEN */
+    @media (min-width: 991px) and (max-width: 1199px){
+
+
+        .p1-text {
+       
+            top: 100px;
+            left: 20px;
+        }
+
+        .p1-text h2{
+            font-size: 3.5rem;
+        }
+        .p1-text p{
+            font-size: 0.9rem;
+            margin: auto;
+        }
+
+
+
+    }
+    
+
+
+
