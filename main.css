@@ -1,9 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-   /* font-family: "Inter", sans-serif; */
-     /* box-sizing:border-box;
-      */
+   
+
       
     
     
@@ -106,18 +105,7 @@ body{
 
 
 
-
-
-
-/* .inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
-
-
+ /*-------- FOOTER-------- */
 
 #foot-container{
     display: flex;
@@ -237,17 +225,125 @@ body{
     color: var(--green);
 }
 
+
+
+
+
+ /* _---------MOBLIE PHONE SCREEN */
+@media (max-width:767px){
+
+
+      body {
+        overflow-x: hidden;
+    }
+
+    .nav-header {
+        height: 70px;
+        justify-content: space-around;
+        padding: 0 8px;
+        box-sizing: border-box;
+    }
+
+    .nav-logo {
+        width: 65px;
+        margin-left: 0;
+    }
+
+    #nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav-link {
+        margin: 0;
+        font-size: 0.65rem;
+        letter-spacing: 0;
+    }
+
+
+
+
+
+    /* =====footer________ */
+
+     #foot-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .first-foot {
+        width: 100%;
+    }
+
+    .first-foot img {
+        width: 11rem;
+    }
+
+    .first-foot p {
+        margin-top: 0;
+    }
+
+    .third-foot {
+        text-align: left;
+    }
+
+    #own h2,
+    #own h3 {
+        font-size: 0.75rem;
+    }
+
+
+    
+
+}
+
+
+ /* _------TABLET SCREEN */
+
+
+
+
+     @media (min-width:768px) and (max-width:991px){
+
+
+
+
+            #foot-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .first-foot {
+        width: 100%;
+    }
+
+    .first-foot img {
+        width: 11rem;
+    }
+
+    .first-foot p {
+        margin-top: 0;
+    }
+
+    .third-foot {
+        text-align: left;
+    }
+
+    #own h2,
+    #own h3 {
+        font-size: 0.75rem;
+    }
+
+     }
+
+
+ /* _---------LAPTOP SMALL SCREEN */
+     @media (min-width: 991px) and (max-width: 1199px){
+
+     }
+
  
 
-/* slide menu */
-
-.slide-menu{
-    background:var(--white)  ;
-    position: relative;
-    width: 180px;
-    /* right: -230px; */
-    top: 177px;
-   
-    display: flex;
-    flex-direction: column;
-}
