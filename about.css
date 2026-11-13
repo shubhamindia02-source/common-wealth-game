@@ -10,6 +10,7 @@
     left: 80px;
 
     width: 500px;
+     box-sizing: border-box;
    
 
 }
@@ -335,69 +336,61 @@ main {
 
 
 /* _---------MOBLIE PHONE SCREEN */
+
+
+
+
+
+
 @media (max-width:767px) {
 
-    
-
-
-
     .head-img img {
-
-
-        width: 100vw;
-  
-        /* height: 80vh; */
-        
+        width: 100%;
+        height: 250px;
+      
     }
 
-
     .head-text {
-        top: 0;
-
+        top: 20px;
         left: 0;
         margin-top: 80px;
+        width: 100%;
+       
+    
         
-
-
     }
 
     .head-text h3 {
-        font-size: 0.5rem;
-        margin-left: -400px;
+        font-size: 1.3rem;
+        margin-left: -250px;
         margin-top: 15px;
-
-
-
-
     }
 
     .head-text h4 {
-        font-size: 0.7rem;
-        margin-left: -400px;
+        font-size: 1.8rem;
+        margin-left: -250px;
     }
-
 
     .head-text p {
-        font-size: 0.3rem;
-        margin-left: 20px;
-        width: 150px;
-        margin-top: 5px;
-
-
-    }
-
-    .hr {
-        gap: 1px;
-
-
-        padding-left: 20px;
+        font-size: 0.5rem;
+        width: 60%;
+        margin-top: -1px;
+        margin-left: 10px;
+        
         
     }
 
-    .hr hr {
-        width: 20px;
-      
+    .head-text .hr {
+        justify-content: center;
+        gap: 5px;
+        padding-left: 0;
 
+         margin-left: -310px;
+
+    }
+
+    .hr hr {
+        width: 30px;
     }
 
     /* ------------section 2 */
@@ -407,6 +400,7 @@ main {
 
     .game-det img {
         width: 90%;
+        height: auto;
         margin-top: -20px;
         margin-left: 5%;
     }
@@ -446,33 +440,25 @@ main {
     }
 
     .sec3-box {
-
+      
         width: 90%;
-        height: 430px;
+        height: auto;
         margin: 5%;
-        border-radius: 20px;
+        
         display: block;
     }
 
     .sec3-box img {
-
         width: 100%;
-
+        
     }
 
     .sec3-box div {
-
         width: 90%;
-
         margin: auto;
     }
 
-
-
-
     .sec3-box h3 {
-
-
         font-size: 2rem;
 
     }
@@ -499,27 +485,30 @@ main {
 
     .sec4-pic img {
         width: 100%;
+        height: auto;
     }
 
 
     #sec-4 h2 {
         font-size: 1.6rem;
+       
+        margin: 25px;
     }
 
     #count-main {
-
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-
-
+        gap: 12px;
+        padding: 0 12px;
+        box-sizing: border-box;
     }
 
     .count-box {
         width: 100%;
-        height: 180px;
+        min-height: 180px;
+        height: auto;
         border-radius: 10px;
         margin: auto;
-
     }
 
     .trop-icon img {
@@ -527,19 +516,24 @@ main {
         width: 60px;
     }
 
-
     .count-box h4 {
         font-size: 2rem;
-
     }
 
     .count-box h5 {
         font-size: 1.2rem;
     }
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* _------TABLET SCREEN */

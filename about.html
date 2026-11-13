@@ -7,6 +7,7 @@
     <title>About</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="about.css">
+     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
 
 </head>
 
@@ -17,13 +18,15 @@
          <img src="image/LOGO.png" alt="logo" class="nav-logo">
       </div>
       <div id="nav-menu" class="main-menu">
-         <a href="index.html" class="nav-link active">Home</a>
-         <a href="about.html" class="nav-link ">About</a>
-       
+         <a href="index.html" class="nav-link ">Home</a>
+         <a href="about.html" class="nav-link active">About</a>
+         
          <a href="athlete.html" class="nav-link ">Athlete</a>
          <a href="medalwinner.html" class="nav-link ">Medals</a>
 
          <a href="gallery.html" class="nav-link ">Gallery</a>
+         
+
          
 
       </div>
@@ -286,4 +289,20 @@
 
 
 </body>
+
+
+<script>
+   $(document).ready(function(){
+
+
+       $(".slide-menu").hide()
+
+       $("#hamburger").click(function(){
+         $(".slide-menu").slideToggle(500)
+       })
+
+
+   })
+</script>
+
 </html>

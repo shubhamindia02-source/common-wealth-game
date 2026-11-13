@@ -1,54 +1,52 @@
+.medal-winners {
 
 
-
- .medal-winners{
-    
- 
     padding: 40px 20px;
- }
- 
-  .medal-winners h2{
+}
+
+.medal-winners h2 {
 
     text-align: center;
     font-size: 32px;
-     margin-bottom: 30px; 
-    color:var(--dark-blue);
+    margin-bottom: 30px;
+    color: var(--dark-blue);
     font-family: var(--body-font);
     font-weight: 600;
     margin-top: 40px;
 
-  }
+}
 
 
 
-   .table-container {
-    
+.table-container {
+
     width: 70%;
-    margin: auto;
-       
-   }
+    margin-left: 15%;
+    /* margin: auto; */
 
-   table {
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
     /* margin: 20px 0 40px; */
     background: #fff;
-     border: 1px solid #000000;
-    
+    border: 1px solid #000000;
+
 }
 
 th,
 td {
-     padding: 14px 16px; 
-    
-    border-bottom:  0.5px dashed rgba(0, 0, 0, 0.315);
+    padding: 14px 16px;
+
+    border-bottom: 0.5px dashed rgba(0, 0, 0, 0.315);
     text-align: left;
     width: 200px;
     font-family: var(--body-font);
 }
 
 th {
-    background:var(--saffron);
+    background: var(--saffron);
     /* color: #fff; */
     color: var(--black);
     font-weight: 600;
@@ -56,7 +54,7 @@ th {
 }
 
 tr:hover {
-   
+
     background: var(--green);
 }
 
@@ -66,7 +64,8 @@ h2 {
     color: var(--dark-blue);
     font-weight: 700;
 }
-tr{
+
+tr {
     transition: all 0.2s ease-in;
 }
 
@@ -77,29 +76,39 @@ tr{
 
 
 
- /* _---------MOBLIE PHONE SCREEN */
-@media (max-width:767px){
+/* _---------MOBLIE PHONE SCREEN */
+@media (max-width:767px) {
 
-   
 
-    .medal-winners h2{
-            font-size: 1.3rem;
-          }
 
-             .table-container {
-                background-color: green;
-                width: 70%;
+    .medal-winners {
         
-                margin-left: -5px;
-     
-             }
+        width: 100%;
 
-           
+    }
 
-             td{
-                font-size: 0.5rem;
-            
-             }
+
+    .medal-winners h2 {
+        font-size: 1.3rem;
+
+    }
+
+    .medal-winners .table-container {
+        width: 80%;
+  
+
+    }
+
+    th {
+        font-size: 0.8rem;
+    }
+
+
+
+    td {
+        font-size: 0.5rem;
+
+    }
 
 }
 
@@ -107,36 +116,37 @@ tr{
 
 
 /* _------TABLET SCREEN */
-     @media (min-width:768px) and (max-width:991px){
-
-
-       
-        .medal-winners h2{
-            font-size: 1.5rem;
-          }
-
-             .table-container {
-       
-                width: 95%;
-             }
+@media (min-width:768px) and (max-width:991px) {
 
 
 
+    .medal-winners h2 {
+        font-size: 1.5rem;
+    }
 
-     }
+    .table-container {
+
+        width: 95%;
+        margin-left: 2.5%;
+    }
 
 
 
 
-     /* _---------LAPTOP SMALL SCREEN */
-     @media (min-width: 991px) and (max-width: 1199px){
-
-
-          .medal-winners h2{
-            font-size: 1.5rem;
-          }
+}
 
 
 
 
-     }
+/* _---------LAPTOP SMALL SCREEN */
+@media (min-width: 991px) and (max-width: 1199px) {
+
+
+    .medal-winners h2 {
+        font-size: 1.5rem;
+    }
+
+
+
+
+}
