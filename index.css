@@ -465,10 +465,11 @@
     .p1-text {
 
 
-        top: 50%;
+        top: 55%;
         left: 5%;
         width: 90%;
         transform: translateY(-60%);
+        background-color: RED;
 
     }
 
